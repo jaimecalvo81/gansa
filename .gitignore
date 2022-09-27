@@ -1,6 +1,22 @@
 # ignore everything in the root except the "wp-content" directory.
 wordpress/*
+!wordpress/wp-content/
 
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wordpress/wp-content/*
+!wordpress/wp-content/mu-plugins/
+!wordpress/wp-content/plugins/
+!wordpress/wp-content/themes/
+
+# ignore these plugins
+wordpress/wp-content/plugins/akismet
+wordpress/wp-content/plugins/hello.php
+wordpress/wp-content/plugins/index.php
+# ignore specific themes
+wordpress/wp-content/themes/twenty*/
+wordpress/wp-content/themes/index.php
+!wordpress/wp-content/themes/twentytwentytwo/function.php
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 # wordpress/wp-content/*
