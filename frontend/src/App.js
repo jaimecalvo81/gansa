@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Menu from './components/menu/menu';
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
@@ -16,6 +17,7 @@ export default function Posts() {
  }, [])
 return (
   <div>
+    <Menu />
     {posts.map((post, index) => (
     <div>
       <div>
