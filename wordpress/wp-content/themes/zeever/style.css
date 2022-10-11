@@ -182,3 +182,13 @@ figcaption {
     margin-top: 46px;
   }
 }
+
+/**
+*  Custom styles
+**/
+.has-background .wp-block-cover {
+  background-attachment: fixed;
+}
+.wp-block-cover__inner-container h1 {
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}

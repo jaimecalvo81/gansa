@@ -31,3 +31,6 @@ db_data/
 *.log
 *.sql
 *.sqlite
+
+# ignore environment variables
+.env
